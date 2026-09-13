@@ -40,6 +40,10 @@ h1,h2,.signature { font-family:Georgia, 'Times New Roman', serif; font-weight:40
 .rsvp { border-top:1px solid var(--line); }
 .rsvp h2 { margin:12px auto 16px; font-size:clamp(32px, 5vw, 52px); line-height:1.08; letter-spacing:-.045em; }
 .rsvp-date { margin-top:20px; font-size:11px; letter-spacing:.14em; text-transform:uppercase; }
+.rsvp-price { margin-top:8px; font-size:13px; }
+.rsvp-price strong { margin-left:5px; font-size:16px; }
+.rsvp-button { margin-top:28px; }
+.rsvp-button:disabled { cursor:not-allowed; opacity:.48; }
 .dress-code h2 { margin-bottom:12px; }
 .dress-code .event-icon,.gift .event-icon,.music .event-icon { margin-bottom:20px; }
 .gallery { padding-left:24px; padding-right:24px; }
