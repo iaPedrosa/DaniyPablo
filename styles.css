@@ -42,8 +42,8 @@ h1,h2,.signature { font-family:Georgia, 'Times New Roman', serif; font-weight:40
 .rsvp-date { margin-top:20px; font-size:11px; letter-spacing:.14em; text-transform:uppercase; }
 .rsvp-price { margin-top:8px; font-size:13px; }
 .rsvp-price strong { margin-left:5px; font-size:16px; }
-.rsvp-button { margin-top:28px; }
-.rsvp-button:disabled { cursor:not-allowed; opacity:.48; }
+.rsvp-button,.playlist-button { display:inline-block; margin-top:28px; text-decoration:none; }
+.dress-code-icon { display:block; width:150px; height:150px; margin:0 auto 20px; filter:invert(1); }
 .dress-code h2 { margin-bottom:12px; }
 .dress-code .event-icon,.gift .event-icon,.music .event-icon { margin-bottom:20px; }
 .gallery { padding-left:24px; padding-right:24px; }
