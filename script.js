@@ -68,3 +68,8 @@ document.querySelectorAll('.photo').forEach((photo) => {
 });
 document.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
 lightbox.addEventListener('click', (event) => { if (event.target === lightbox) lightbox.close(); });
+
+const bankDetails = document.querySelector('#bank-details');
+document.querySelector('#bank-details-button').addEventListener('click', () => bankDetails.showModal());
+document.querySelector('.bank-details-close').addEventListener('click', () => bankDetails.close());
+bankDetails.addEventListener('click', (event) => { if (event.target === bankDetails) bankDetails.close(); });

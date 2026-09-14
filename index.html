@@ -95,6 +95,7 @@
         <p class="eyebrow">Un detalle especial</p>
         <h2>El mejor regalo<br />es tu presencia.</h2>
         <p>Si deseás realizarnos otro regalo, podés colaborar con nuestra luna de miel.</p>
+        <button class="button button-light bank-details-button" id="bank-details-button" type="button">Ver datos bancarios</button>
       </section>
 
       <section class="music section">
@@ -118,6 +119,18 @@
     <dialog class="lightbox" id="lightbox">
       <button class="lightbox-close" type="button" aria-label="Cerrar foto">×</button>
       <img id="lightbox-image" src="" alt="" />
+    </dialog>
+    <dialog class="bank-details" id="bank-details" aria-labelledby="bank-details-title">
+      <button class="bank-details-close" type="button" aria-label="Cerrar datos bancarios">×</button>
+      <p class="eyebrow">Para nuestra luna de miel</p>
+      <h2 id="bank-details-title">Datos bancarios</h2>
+      <dl>
+        <div><dt>Banco</dt><dd>Galicia</dd></div>
+        <div><dt>Titular</dt><dd>Pablo Garcia Reyna</dd></div>
+        <div><dt>CTA</dt><dd>4164461-0 076-2</dd></div>
+        <div><dt>CBU</dt><dd>0070076430004164461025</dd></div>
+        <div><dt>Alias</dt><dd>Bodadanipablo</dd></div>
+      </dl>
     </dialog>
     <script src="script.js"></script>
   </body>
