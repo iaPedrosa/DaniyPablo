@@ -68,7 +68,7 @@ h1,h2,.signature { font-family:Georgia, 'Times New Roman', serif; font-weight:40
 .bank-details dt::after { content:': '; }
 .bank-details dd { font-size:18px; }
 .bank-details-close { position:absolute; top:12px; right:16px; width:34px; height:34px; border:0; background:transparent; color:var(--ink); font-size:30px; font-weight:300; line-height:1; cursor:pointer; }
-.music { max-width:760px; margin:auto; }
+.music { width:100%; max-width:none; margin:0; }
 .music h2 { margin-bottom:18px; }
 .music p:not(.eyebrow) { max-width:530px; margin:auto; }
 .closing { min-height:72svh; }
