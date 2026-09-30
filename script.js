@@ -70,6 +70,12 @@ document.querySelector('.lightbox-close').addEventListener('click', () => lightb
 lightbox.addEventListener('click', (event) => { if (event.target === lightbox) lightbox.close(); });
 
 const bankDetails = document.querySelector('#bank-details');
-document.querySelector('#bank-details-button').addEventListener('click', () => bankDetails.showModal());
+const bankDetailsContext = document.querySelector('#bank-details-context');
+document.querySelectorAll('[data-bank-details]').forEach((button) => {
+  button.addEventListener('click', () => {
+    bankDetailsContext.textContent = button.dataset.bankContext;
+    bankDetails.showModal();
+  });
+});
 document.querySelector('.bank-details-close').addEventListener('click', () => bankDetails.close());
 bankDetails.addEventListener('click', (event) => { if (event.target === bankDetails) bankDetails.close(); });

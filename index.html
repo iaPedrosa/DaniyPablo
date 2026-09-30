@@ -70,7 +70,10 @@
         <p>¡Confirmanos tu asistencia!</p>
         <p class="rsvp-date">Antes del <strong>01/02/2027</strong></p>
         <p class="rsvp-price">Valor de la tarjeta <strong>$150.000</strong></p>
-        <a class="button rsvp-button" href="https://forms.gle/tx5hhU8bsbjMFpvu6" target="_blank" rel="noopener noreferrer">Confirmar asistencia</a>
+        <div class="rsvp-actions">
+          <a class="button rsvp-button" href="https://forms.gle/tx5hhU8bsbjMFpvu6" target="_blank" rel="noopener noreferrer">Confirmar asistencia</a>
+          <button class="button rsvp-button" type="button" data-bank-details data-bank-context="Para abonar tarjeta">Ver datos bancarios</button>
+        </div>
       </section>
 
       <section class="dress-code section section-soft">
@@ -95,7 +98,7 @@
         <p class="eyebrow">Un detalle especial</p>
         <h2>El mejor regalo<br />es tu presencia.</h2>
         <p>Si deseás realizarnos otro regalo, podés colaborar con nuestra luna de miel.</p>
-        <button class="button button-light bank-details-button" id="bank-details-button" type="button">Ver datos bancarios</button>
+        <button class="button button-light bank-details-button" type="button" data-bank-details data-bank-context="Para nuestra luna de miel">Ver datos bancarios</button>
       </section>
 
       <section class="music section">
@@ -122,7 +125,7 @@
     </dialog>
     <dialog class="bank-details" id="bank-details" aria-labelledby="bank-details-title">
       <button class="bank-details-close" type="button" aria-label="Cerrar datos bancarios">×</button>
-      <p class="eyebrow">Para nuestra luna de miel</p>
+      <p class="eyebrow" id="bank-details-context">Para nuestra luna de miel</p>
       <h2 id="bank-details-title">Datos bancarios</h2>
       <dl>
         <div><dt>Banco</dt><dd>Galicia</dd></div>
